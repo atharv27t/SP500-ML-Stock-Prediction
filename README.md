@@ -17,22 +17,6 @@ A machine learning pipeline that predicts next-day stock direction (UP / DOWN) f
 | PG | Procter & Gamble | Consumer Staples |
 | HD | Home Depot | Consumer Discretionary |
 
-## How It Works
-
-1. **Data Collection** -- 6 years of daily OHLCV data (Jan 2020 - Jun 2026) pulled from yfinance
-2. **Feature Engineering** -- 20+ technical indicators (SMA, EMA, RSI, MACD, Bollinger Bands, momentum, volatility, lagged returns)
-3. **Model Training** -- Logistic Regression, Random Forest, XGBoost on an 80/20 time-ordered split
-4. **Evaluation** -- Accuracy, Precision, Recall, F1, ROC AUC, confusion matrices, ROC/PR curves
-
-## Setup & Usage
-
-```bash
-pip install -r requirements.txt
-```
-
-**Step 1** -- Run `collect_data.ipynb` to download stock data
-**Step 2** -- Run `stock_ml_pipeline.ipynb` to train models and generate charts
-
 ## Results
 
 | Model | Accuracy | F1 Score | ROC AUC |
@@ -79,17 +63,11 @@ Balance between UP and DOWN days in the test set.
 
 ## Project Structure
 
-```
 SP500 ML Stock Prediction/
-├── collect_data.ipynb          # Step 1: download data from yfinance
-├── stock_ml_pipeline.ipynb     # Step 2: feature engineering + ML + charts
-├── sp500_stocks.csv            # Raw OHLCV data (10 stocks, 6 years)
-├── requirements.txt
-├── images/                     # Generated charts
-├── LICENSE
-└── README.md
-```
-
-## License
-
-MIT
+collect_data.ipynb -- Step 1: download data from yfinance
+stock_ml_pipeline.ipynb -- Step 2: feature engineering + ML + charts
+sp500_stocks.csv -- Raw OHLCV data (10 stocks, 6 years)
+requirements.txt
+images/ -- Generated charts
+LICENSE
+README.md
