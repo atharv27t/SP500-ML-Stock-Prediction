@@ -63,11 +63,8 @@ Balance between UP and DOWN days in the test set.
 
 ## Project Structure
 
-SP500 ML Stock Prediction/
-collect_data.ipynb -- Step 1: download data from yfinance
-stock_ml_pipeline.ipynb -- Step 2: feature engineering + ML + charts
-sp500_stocks.csv -- Raw OHLCV data (10 stocks, 6 years)
-requirements.txt
-images/ -- Generated charts
-LICENSE
-README.md
+1. collect_data.ipynb -- download data from yfinance
+2. stock_ml_pipeline.ipynb -- feature engineering + ML + charts
+3. sp500_stocks.csv -- raw OHLCV data (10 stocks, 6 years)
+4. requirements.txt -- dependencies
+5. images/ -- generated charts
