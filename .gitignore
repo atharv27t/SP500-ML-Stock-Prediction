@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+models/
+sp500_enriched.csv
+model_comparison.csv
